@@ -130,6 +130,12 @@ nav {
 .sabor:hover {
     transform: scale(1.08);
 }
+.sabor-imagem{
+    height: 293px
+}
+.imagem{
+    margin-bottom: 140px;
+}
 
 .quadrado {
     background-color: #B2666F;
@@ -145,4 +151,145 @@ nav {
     width: 100%;
     justify-content: center;
     gap: 15%;
+}
+.titulo{
+    font-family: 'Rock Salt';
+    font-size: 50px;
+}
+.tituloSabor{
+    font-family: Rock Salt;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+@media (max-width: 1450px) {
+    .sabor {
+        width: 200px;
+        margin-bottom: 50px;
+        box-shadow: 0 0 50px black;
+        border-radius: 30px;
+    }
+    .sabor-imagem{
+        height: 207px
+    }
+    .quadrado{
+        font-size: 13.5px;
+    }
+}
+@media (max-width: 1070px) {
+    .imagem{
+        width: 700px;
+    }
+    .nuvem {
+        position: relative;
+        bottom: 120px;
+        width: 100%;
+    }
+}
+@media (max-width: 1070px) {
+    .nuvem {
+        position: relative;
+        bottom: 100px;
+        width: 100%;
+    }
+}
+@media (max-width: 940px) {
+    .navList ul {
+        gap: 50px;
+        font-size: 18px;
+    }
+    .navList ul {
+        text-align: center;
+    }
+    .sabor {
+        width: 160px;
+        margin-bottom: 50px;
+        box-shadow: 0 0 50px black;
+        border-radius: 30px;
+    }
+    .sabor-imagem{
+        height: 167px
+    }
+    .quadrado{
+        font-size: 11px;
+    }
+    .nuvem {
+        position: relative;
+        bottom: 100px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    .navLogo img {
+        width: 80px;
+        height: 80px;
+    }
+    .navList ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    body {
+        padding: 0px;
+    }
+    .linha1, .linha2, .linha3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sabor {
+        width: 197px;
+        margin-bottom: 50px;
+        box-shadow: 0 0 50px black;
+        border-radius: 30px;
+    }
+    .sabor-imagem{
+        height: 207px
+    }
+    .quadrado{
+        font-size: 13px;
+    }
+    .titulo{
+        font-family: 'Rock Salt';
+        font-size: 30px;
+    }
+    .imagem{
+        width: 450px;
+    }
+    .nuvem {
+        position: relative;
+        bottom: 80px;
+        width: 100%;
+    }
+}
+@media (max-width: 680px) {
+    .nuvem {
+        position: relative;
+        bottom: 60px;
+        width: 100%;
+    }
+    .tituloSabor{
+        font-family: Rock Salt;
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 70px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 20px;
+    }
+    .navLogo img {
+        width: 60px;
+        height: 60px;
+    }
+    .navList ul {
+        font-size: 16px;
+    }
 }

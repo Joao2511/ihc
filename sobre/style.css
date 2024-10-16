@@ -5,12 +5,16 @@
     scroll-behavior: smooth;
     font-family: Poppins;
 }
+
 a {
     text-decoration: none;
     color: white;
 }
 body {
     background-image: url('../src/fundo.png');
+    background-size: cover;
+    background-position: contain;
+    background-repeat: no-repeat;
     padding: 0 100px;
 }
 
@@ -47,16 +51,16 @@ nav {
 }
 
 .navList ul li a {
-    color: white; /* Cor do texto */
-    transition: color 0.3s ease; /* Efeito de transição */
+    color: white;
+    transition: color 0.3s ease;
 }
 
 .navList ul li a:hover {
-    color: #319DFF; /* Cor no hover */
+    color: #319DFF;
 }
 
 .navList ul li a::after {
-    content: ""; /* Cria um elemento vazio */
+    content: "";
     display: block;
     height: 2px;
     background: #319DFF;
@@ -67,26 +71,83 @@ nav {
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
-.selected{
+
+.navList ul li a:hover::after,
+.navList ul li a.selected::after {
+    transform: scaleX(1);
+}
+
+.selected {
     font-weight: 700;
 }
 
-.navList ul li a:hover::after,
-.navList ul li a.selected::after { /* Aplica ao hover ou se estiver selecionado */
-    transform: scaleX(1); /* Mostra a linha */
-}
-section{
+section {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-h1{
+
+h1 {
     text-align: center;
     margin: 30px 0;
 }
-p{
+
+p {
     text-align: justify;
     width: 50%;
     font-size: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 1025px) {
+    section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    body {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 875px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .navLogo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .navList ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    body {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 20px;
+    }
+
+    .navLogo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .navList ul {
+        font-size: 16px;
+    }
 }

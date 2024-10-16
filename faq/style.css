@@ -10,7 +10,7 @@ a {
     color: white;
 }
 body {
-    background-image: url('../src/fundo.png');
+    background: radial-gradient(#319DFF, #0E416F);
     padding: 0 100px;
 }
 
@@ -75,31 +75,40 @@ nav {
 .navList ul li a.selected::after { /* Aplica ao hover ou se estiver selecionado */
     transform: scaleX(1); /* Mostra a linha */
 }
-.lojas{
-    color: white;
+.section6 {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto 50px auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
+    border-radius: 50px;
+    min-height: 700px;
     justify-content: center;
-    gap: 200px;
-    margin-top: 50px;
 }
-.loja1, .loja2{
+.titulo{
+    font-size: 3rem;
+    margin: 2rem 0rem;
     text-align: center;
+    color: white;
+}
+.pergunta img{
+    width: 32px;
+    height: 32px;
 }
 .faq{
     max-width: 700px;
     margin-top: 2rem;
     padding-bottom: 1rem;
     cursor: pointer;
-    background-color: #242a40;
-    border-radius: 20px;
+    border-bottom: solid #0E416F 2px;
 }
 
 .pergunta{
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
+    color: black
 }
 .pergunta h3{
     font-size: 1.2rem;
@@ -119,9 +128,13 @@ nav {
     overflow: hidden;
     transition: max-height 0.8s ease;
 }
+.faq.active .pergunta{
+    animation: 1s ease-in-out;
+    color: #4A3AFF
+}
 .faq.active .resposta{
     max-height: 300px;
-    animation: fade 1s ease-in-out;
+    color: black
 }
 .faq.active img{
     transform: rotate(180deg);
@@ -129,4 +142,13 @@ nav {
 img {
     transition: transform 0.2s ease-in;
     margin-right: 10px;
+}
+
+@keyframes fade{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
