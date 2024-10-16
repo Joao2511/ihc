@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Poppins;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+body {
+    background-image: url('../src/fundo.png');
+    padding: 0 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navLogo img {
+    width: 100px;
+    height: 100px;
+}
+
+.navList {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navList ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.navList ul li {
+    cursor: pointer;
+    position: relative;
+}
+
+.navList ul li a {
+    color: white; /* Cor do texto */
+    transition: color 0.3s ease; /* Efeito de transição */
+}
+
+.navList ul li a:hover {
+    color: #319DFF; /* Cor no hover */
+}
+
+.navList ul li a::after {
+    content: ""; /* Cria um elemento vazio */
+    display: block;
+    height: 2px;
+    background: #319DFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.selected{
+    font-weight: 700;
+}
+
+.navList ul li a:hover::after,
+.navList ul li a.selected::after { /* Aplica ao hover ou se estiver selecionado */
+    transform: scaleX(1); /* Mostra a linha */
+}
+.lojas{
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 50px;
+}
+.loja1, .loja2{
+    text-align: center;
+}
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    background-color: #242a40;
+    border-radius: 20px;
+}
+
+.pergunta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.pergunta h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0 0 1rem;
+    width: 90%;
+}
+.resposta p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    width: 90%;
+    margin: 1rem 0 0 1rem;
+}
+.resposta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease;
+}
+.faq.active .resposta{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+.faq.active img{
+    transform: rotate(180deg);
+}
+img {
+    transition: transform 0.2s ease-in;
+    margin-right: 10px;
+}
