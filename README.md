@@ -16,4 +16,4 @@ Este é um projeto de um site fictício para a sorveteria **Nevaska**, desenvolv
 
 ## Objetivo
 
-Este projeto foi desenvolvido para a disciplina de **Desenvolvimento Web** na faculdade, com o intuito de aplicar os conceitos aprendidos em aula e criar uma interface funcional e interativa para um negócio fictício.
+Este projeto foi desenvolvido para a disciplina de **Interação Humano Computador** na faculdade, com o intuito de aplicar os conceitos aprendidos em aula e criar uma interface funcional e interativa para um negócio fictício.
