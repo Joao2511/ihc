@@ -52,14 +52,14 @@ nav {
 }
 
 .navList ul li a:hover {
-    color: #319DFF; /* Cor no hover */
+    color: #FF8D9A; /* Cor no hover */
 }
 
 .navList ul li a::after {
     content: ""; /* Cria um elemento vazio */
     display: block;
     height: 2px;
-    background: #319DFF;
+    background: #FF8D9A;
     position: absolute;
     left: 0;
     right: 0;
@@ -75,7 +75,7 @@ nav {
 .navList ul li a.selected::after { /* Aplica ao hover ou se estiver selecionado */
     transform: scaleX(1); /* Mostra a linha */
 }
-.section6 {
+.sect {
     background-color: white;
     width: 80%;
     margin: 0 auto 50px auto;
@@ -151,4 +151,130 @@ img {
     to{
         opacity: 1;
     }
+}
+@media (max-width: 1250px) {
+    .faq{
+        max-width: 500px;
+    }
+    .pergunta h3{
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 1rem 0 0 1rem;
+        width: 90%;
+    }
+    .resposta p{
+        font-size: 1rem;
+    }
+    .pergunta img{
+        width: 24px;
+        height: 24px;
+    }
+    .titulo{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1025px) {
+    body {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 838px) {
+    .navList ul {
+        gap: 50px;
+        font-size: 18px;
+    }
+    .navList ul {
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    .navLogo img {
+        width: 80px;
+        height: 80px;
+    }
+    .navList ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    body {
+        padding: 0 50px;
+    }
+}
+@media (max-width: 650px) {
+    body {
+        padding: 0 20px;
+    }
+    .navLogo img {
+        width: 60px;
+        height: 60px;
+    }
+    .navList ul {
+        font-size: 16px;
+    }
+    .faq{
+        max-width: 500px;
+    }
+    .pergunta h3{
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 1rem 0 0 1rem;
+        width: 90%;
+    }
+    .resposta p{
+        font-size: 1rem;
+    }
+    .pergunta img{
+        width: 18px;
+        height: 18px;
+    }
+    .titulo{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 0;
+    }
+    .navLogo img {
+        width: 60px;
+        height: 60px;
+    }
+    .navList ul {
+        font-size: 16px;
+    }
+    .faq{
+        max-width: 500px;
+    }
+    .sect{
+        width: 100%;
+        border-radius: 10px;
+        justify-content: center;
+        min-height: auto
+    }
+    .pergunta h3{
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 1rem 0 0 1rem;
+        width: 90%;
+    }
+    .resposta p{
+        font-size: 1rem;
+    }
+    .pergunta img{
+        width: 24px;
+        height: 24px;
+    }
+    .titulo{
+        font-size: 2rem;
+    }
+    
 }

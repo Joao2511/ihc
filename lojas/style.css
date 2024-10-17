@@ -87,3 +87,79 @@ nav {
 .loja1, .loja2{
     text-align: center;
 }
+@media (max-width: 1320px) {
+    .navList ul {
+        gap: 50px;
+        font-size: 18px;
+    }
+    .navList ul {
+        text-align: center;
+    }
+    .loja1 img, .loja2 img{
+        width: 400px;
+    }
+}
+@media (max-width: 1200px) {
+    .lojas{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .loja1 img, .loja2 img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 940px) {
+    .navList ul {
+        gap: 50px;
+        font-size: 18px;
+    }
+    .navList ul {
+        text-align: center;
+    }
+    .loja1 img, .loja2 img{
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    .navLogo img {
+        width: 80px;
+        height: 80px;
+    }
+    .navList ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    body {
+        padding: 0 50px;
+    }
+    .lojas{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .loja1 img{
+        width: 200px;
+    }
+    .loja2 img{
+        width: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 20px;
+    }
+    .navLogo img {
+        width: 60px;
+        height: 60px;
+    }
+    .navList ul {
+        font-size: 16px;
+    }
+}

@@ -146,7 +146,7 @@ nav {
     color: white;
     padding: 15px;
 }
-.linha1, .linha2, .linha3{
+.linha1, .linha2, .linha3, .linha4{
     display: flex;
     width: 100%;
     justify-content: center;
@@ -236,7 +236,7 @@ nav {
     body {
         padding: 0px;
     }
-    .linha1, .linha2, .linha3{
+    .linha1, .linha2, .linha3, .linha4{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -281,9 +281,9 @@ nav {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     body {
-        padding: 0 20px;
+        padding: 0px;
     }
     .navLogo img {
         width: 60px;
@@ -291,5 +291,18 @@ nav {
     }
     .navList ul {
         font-size: 16px;
+    }
+    .imagem{
+        width: 320px;
+    }
+    .titulo{
+        font-family: 'Rock Salt';
+        font-size: 30px;
+        text-align: center;
+    }
+    .nuvem {
+        position: relative;
+        bottom: 40px;
+        width: 100%;
     }
 }
