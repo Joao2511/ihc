@@ -5,7 +5,9 @@
     scroll-behavior: smooth;
     font-family: Poppins;
 }
-
+html, body{
+    height: 100%;
+}
 a {
     text-decoration: none;
     color: white;
@@ -266,6 +268,9 @@ img:nth-child(5) {
     }
     body {
         padding: 0 50px;
+    }
+    html, body{
+        height: auto
     }
 }
 

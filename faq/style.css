@@ -130,7 +130,7 @@ nav {
 }
 .faq.active .pergunta{
     animation: 1s ease-in-out;
-    color: #4A3AFF
+    color: #FF8D9A
 }
 .faq.active .resposta{
     max-height: 300px;
