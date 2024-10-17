@@ -12,7 +12,6 @@ Este é um projeto de um site fictício para a sorveteria **Nevaska**, desenvolv
 
 - Exibição de produtos (sorvetes) oferecidos pela sorveteria.
 - Design responsivo para oferecer uma boa experiência em dispositivos móveis e desktop.
-- Formulário de contato para atendimento ao cliente.
 - Animações e efeitos interativos para melhorar a experiência do usuário.
 
 ## Objetivo
