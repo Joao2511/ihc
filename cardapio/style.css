@@ -21,6 +21,7 @@ nav {
     align-items: center;
     padding: 10px 0;
     padding: 0 100px;
+    background-color: #FFF;
 }
 
 .navLogo img {
@@ -50,19 +51,15 @@ nav {
 
 .navList ul li a {
     color: white;
-    /* Cor do texto */
     transition: color 0.3s ease;
-    /* Efeito de transição */
 }
 
 .navList ul li a:hover {
     color: #319DFF;
-    /* Cor no hover */
 }
 
 .navList ul li a::after {
     content: "";
-    /* Cria um elemento vazio */
     display: block;
     height: 2px;
     background: #319DFF;
@@ -74,15 +71,13 @@ nav {
     transition: transform 0.3s ease;
 }
 
-.selected {
-    font-weight: 700;
-}
-
 .navList ul li a:hover::after,
 .navList ul li a.selected::after {
-    /* Aplica ao hover ou se estiver selecionado */
     transform: scaleX(1);
-    /* Mostra a linha */
+}
+
+.selected {
+    font-weight: 700;
 }
 
 .sect1 {
@@ -114,7 +109,7 @@ nav {
 .sabores {
     gap: 20px;
     width: 100%;
-}  
+}
 
 .sabor {
     display: flex;
@@ -127,13 +122,16 @@ nav {
     box-shadow: 0 0 50px black;
     border-radius: 30px;
 }
+
 .sabor:hover {
     transform: scale(1.08);
 }
-.sabor-imagem{
-    height: 293px
+
+.sabor-imagem {
+    height: 293px;
 }
-.imagem{
+
+.imagem {
     margin-bottom: 140px;
 }
 
@@ -146,77 +144,70 @@ nav {
     color: white;
     padding: 15px;
 }
-.linha1, .linha2, .linha3, .linha4{
+
+.quadrado h1 {
+    font-size: 30px;
+}
+
+.linha1, .linha2, .linha3, .linha4 {
     display: flex;
     width: 100%;
     justify-content: center;
     gap: 15%;
 }
-.titulo{
+
+.titulo {
     font-family: 'Rock Salt';
     font-size: 50px;
 }
-.tituloSabor{
-    font-family: Rock Salt;
+
+.tituloSabor {
+    font-family: 'Rock Salt';
     text-align: center;
     font-size: 40px;
     margin-bottom: 70px;
 }
+
+/* Media Queries */
 @media (max-width: 1450px) {
     .sabor {
         width: 200px;
-        margin-bottom: 50px;
-        box-shadow: 0 0 50px black;
-        border-radius: 30px;
     }
-    .sabor-imagem{
-        height: 207px
+    .sabor-imagem {
+        height: 207px;
     }
-    .quadrado{
+    .quadrado {
         font-size: 13.5px;
     }
 }
+
 @media (max-width: 1070px) {
-    .imagem{
+    .imagem {
         width: 700px;
     }
-    .nuvem {
-        position: relative;
-        bottom: 120px;
-        width: 100%;
+    .quadrado h1 {
+        font-size: 28px;
     }
 }
-@media (max-width: 1070px) {
-    .nuvem {
-        position: relative;
-        bottom: 100px;
-        width: 100%;
-    }
-}
+
 @media (max-width: 940px) {
     .navList ul {
         gap: 50px;
         font-size: 18px;
-    }
-    .navList ul {
         text-align: center;
     }
     .sabor {
         width: 160px;
-        margin-bottom: 50px;
-        box-shadow: 0 0 50px black;
-        border-radius: 30px;
     }
-    .sabor-imagem{
-        height: 167px
+    .sabor-imagem {
+        height: 167px;
     }
-    .quadrado{
+    .quadrado {
         font-size: 11px;
     }
     .nuvem {
         position: relative;
         bottom: 100px;
-        width: 100%;
     }
 }
 
@@ -234,56 +225,47 @@ nav {
         gap: 10px;
     }
     body {
-        padding: 0px;
+        padding: 0;
     }
-    .linha1, .linha2, .linha3, .linha4{
+    .linha1, .linha2, .linha3, .linha4 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .sabor {
         width: 197px;
-        margin-bottom: 50px;
-        box-shadow: 0 0 50px black;
-        border-radius: 30px;
     }
-    .sabor-imagem{
-        height: 207px
+    .sabor-imagem {
+        height: 207px;
     }
-    .quadrado{
+    .quadrado {
         font-size: 13px;
     }
-    .titulo{
-        font-family: 'Rock Salt';
+    .titulo {
         font-size: 30px;
     }
-    .imagem{
+    .imagem {
         width: 450px;
     }
     .nuvem {
         position: relative;
         bottom: 80px;
-        width: 100%;
     }
 }
+
 @media (max-width: 680px) {
     .nuvem {
         position: relative;
         bottom: 60px;
-        width: 100%;
     }
-    .tituloSabor{
-        font-family: Rock Salt;
-        text-align: center;
+    .tituloSabor {
         font-size: 32px;
-        margin-bottom: 70px;
     }
 }
 
-
 @media (max-width: 500px) {
     body {
-        padding: 0px;
+        padding: 0;
     }
     .navLogo img {
         width: 60px;
@@ -292,17 +274,31 @@ nav {
     .navList ul {
         font-size: 16px;
     }
-    .imagem{
+    .imagem {
         width: 320px;
     }
-    .titulo{
-        font-family: 'Rock Salt';
+    .titulo {
         font-size: 30px;
         text-align: center;
     }
     .nuvem {
         position: relative;
         bottom: 40px;
-        width: 100%;
     }
+}
+.navbar-toggler:focus {
+    outline: none; /* Remove o contorno ao focar no botão */
+    box-shadow: none; /* Remove qualquer sombra ao focar no botão */
+}
+.navbar-toggler {
+    border: none;           /* Remove a borda do botão */
+    outline: none;          /* Remove o contorno do botão */
+}
+
+.navbar-toggler:focus {
+    outline: none;          /* Remove o contorno quando o botão é clicado */
+}
+
+.navbar-toggler i {
+    color: white;           /* Cor branca para o ícone */
 }

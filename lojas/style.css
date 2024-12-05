@@ -163,3 +163,309 @@ nav {
         font-size: 16px;
     }
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Poppins;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.imgFundo {
+    background-image: url('../src/fundo.png');
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    padding: 0 100px;
+    background-color: #FFF;
+}
+
+.navLogo img {
+    width: 100px;
+    height: 100px;
+}
+
+.navList {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navList ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.navList ul li {
+    cursor: pointer;
+    position: relative;
+}
+
+.navList ul li a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navList ul li a:hover {
+    color: #319DFF;
+}
+
+.navList ul li a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #319DFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navList ul li a:hover::after,
+.navList ul li a.selected::after {
+    transform: scaleX(1);
+}
+
+.selected {
+    font-weight: 700;
+}
+
+.sect1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nuvem {
+    position: relative;
+    bottom: 140px;
+    width: 100%;
+}
+
+.nuvem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sect2 {
+    background-image: url('../src/fundoBranco.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sabores {
+    gap: 20px;
+    width: 100%;
+}
+
+.sabor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    margin-bottom: 50px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0 0 50px black;
+    border-radius: 30px;
+}
+
+.sabor:hover {
+    transform: scale(1.08);
+}
+
+.sabor-imagem {
+    height: 293px;
+}
+
+.imagem {
+    margin-bottom: 140px;
+}
+
+.quadrado {
+    background-color: #B2666F;
+    width: 100%;
+    height: 200px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: white;
+    padding: 15px;
+}
+
+.quadrado h1 {
+    font-size: 30px;
+}
+
+.linha1, .linha2, .linha3, .linha4 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15%;
+}
+
+.titulo {
+    font-family: 'Rock Salt';
+    font-size: 50px;
+}
+
+.tituloSabor {
+    font-family: 'Rock Salt';
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+/* Media Queries */
+@media (max-width: 1450px) {
+    .sabor {
+        width: 200px;
+    }
+    .sabor-imagem {
+        height: 207px;
+    }
+    .quadrado {
+        font-size: 13.5px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .imagem {
+        width: 700px;
+    }
+    .quadrado h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 940px) {
+    .navList ul {
+        gap: 50px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .sabor {
+        width: 160px;
+    }
+    .sabor-imagem {
+        height: 167px;
+    }
+    .quadrado {
+        font-size: 11px;
+    }
+    .nuvem {
+        position: relative;
+        bottom: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    .navLogo img {
+        width: 80px;
+        height: 80px;
+    }
+    .navList ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    body {
+        padding: 0;
+    }
+    .linha1, .linha2, .linha3, .linha4 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sabor {
+        width: 197px;
+    }
+    .sabor-imagem {
+        height: 207px;
+    }
+    .quadrado {
+        font-size: 13px;
+    }
+    .titulo {
+        font-size: 30px;
+    }
+    .imagem {
+        width: 450px;
+    }
+    .nuvem {
+        position: relative;
+        bottom: 80px;
+    }
+}
+
+@media (max-width: 680px) {
+    .nuvem {
+        position: relative;
+        bottom: 60px;
+    }
+    .tituloSabor {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 0;
+    }
+    .navLogo img {
+        width: 60px;
+        height: 60px;
+    }
+    .navList ul {
+        font-size: 16px;
+    }
+    .imagem {
+        width: 320px;
+    }
+    .titulo {
+        font-size: 30px;
+        text-align: center;
+    }
+    .nuvem {
+        position: relative;
+        bottom: 40px;
+    }
+}
+.navbar-toggler:focus {
+    outline: none; /* Remove o contorno ao focar no botão */
+    box-shadow: none; /* Remove qualquer sombra ao focar no botão */
+}
+.navbar-toggler {
+    border: none;           /* Remove a borda do botão */
+    outline: none;          /* Remove o contorno do botão */
+}
+
+.navbar-toggler:focus {
+    outline: none;          /* Remove o contorno quando o botão é clicado */
+}
+
+.navbar-toggler i {
+    color: white;           /* Cor branca para o ícone */
+}

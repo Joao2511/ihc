@@ -278,3 +278,19 @@ img {
     }
     
 }
+.navbar-toggler:focus {
+    outline: none; /* Remove o contorno ao focar no botão */
+    box-shadow: none; /* Remove qualquer sombra ao focar no botão */
+}
+.navbar-toggler {
+    border: none;           /* Remove a borda do botão */
+    outline: none;          /* Remove o contorno do botão */
+}
+
+.navbar-toggler:focus {
+    outline: none;          /* Remove o contorno quando o botão é clicado */
+}
+
+.navbar-toggler i {
+    color: white;           /* Cor branca para o ícone */
+}
